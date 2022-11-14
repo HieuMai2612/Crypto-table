@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
     new Promise(async (resolve, reject) => {
         try {
             response = await axios.get(
-                "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=20",
+                "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
                 {
                     headers: {
                         "X-CMC_PRO_API_KEY": "fecff2e3-f463-47e6-b783-10c0932142ba",
